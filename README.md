@@ -59,6 +59,35 @@ Create `EXPLANATION.md` (max 250 words) containing:
 - **Why does your fix solve it?**
 - **One realistic case / edge case your tests still don’t cover**
 
+## Running the tests
+
+### Locally
+
+1. Create a virtual environment (recommended) and activate it.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the test suite:
+   ```bash
+   pytest -v
+   ```
+   Or from the project root:
+   ```bash
+   python -m pytest tests/ -v
+   ```
+
+### With Docker
+
+1. Build the image (from the project root):
+   ```bash
+   docker build -t ai-experts-assignment-3 .
+   ```
+2. Run the container (tests run by default):
+   ```bash
+   docker run ai-experts-assignment-3
+   ```
+
 ## Submission
 
 - Submit a public GitHub repository URL containing your solution to the Google form link provided.
